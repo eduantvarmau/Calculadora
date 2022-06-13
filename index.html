@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="icon" href="./src/calculadora.png">
+    <!--Link de CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Link Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <section id="calculadora">
+        <header id="pantalla">
+            <span id="resultado"></span>
+       </header>
+    
+       <main id="teclado">
+
+            <button id="reset" onclick="reset()">C</button>
+            <button id="limpiar" onclick="limpiar()">CE</button>
+            <button id="undo" onclick="undo()">«</button>
+            <button id="negativo" onclick="negativo()">±</button>
+            
+
+            <button id="pi" onclick="pi()">π</button>
+            <button id="potencia" onclick="potencia()">^</button>
+            <button id="raiz" onclick="raiz()">√</button>
+            <button id="residuo" onclick="residuo()">%</button>
+
+            <button id="siete" onclick="siete()">7</button>
+            <button id="ocho" onclick="ocho()">8</button>
+            <button id="nueve" onclick="nueve()">9</button>
+            <button id="dividir" onclick="dividir()">÷</button>
+
+            <button id="cuatro" onclick="cuatro()">4</button>
+            <button id="cinco" onclick="cinco()">5</button>
+            <button id="seis" onclick="seis()">6</button>
+            <button id="multiplicar" onclick="multiplicar()">x</button>
+
+            <button id="uno" onclick="uno()">1</button>
+            <button id="dos" onclick="dos()">2</button>
+            <button id="tres" onclick="tres()">3</button>
+            <button id="resta" onclick="resta()">-</button>
+
+            <button id="cero" onclick="cero()">0</button>
+            <button id="punto" onclick="punto()">.</button>
+            <button id="igual" onclick="igual()">=</button>
+            <button id="suma" onclick="suma()">+</button>
+
+       </main> 
+    </section>
+   
+</body>
+    <!--Link de JS-->
+    <script src="./js/main.js"></script>
+</html>

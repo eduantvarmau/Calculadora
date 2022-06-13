@@ -1,0 +1,211 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+}
+
+
+body {
+    width : 100%;
+    font-family: 'Poppins', sans-serif;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+}
+
+#calculadora{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(14, 14, 14);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* box-shadow: rgba(173, 49, 189, 0.500) 0px 5px 15px; */
+    box-shadow: 2px 6px  rgb(0, 0, 0);
+
+}
+
+#pantalla{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(48, 48, 48, 0.500);
+    color: white;
+    border: rgb(14, 14, 14) 15px solid;
+    border-radius : 25px;
+    font-size : 30px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+#teclado{
+    width: 100%;
+    overflow : hidden;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+    
+}
+
+#teclado > button{
+    padding: 4px;
+    width: 21%;
+    height: 40px;
+    margin: 3px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(48, 48, 48, 0.500);
+    box-shadow: 1px 3px  rgba(24, 24, 24, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+#teclado > button#igual{
+    background-color   : rgba(173, 49, 189, 0.500);
+    color: white;
+    box-shadow: 1px 3px  rgb(52, 14, 56);
+
+}
+
+#teclado > #resta{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+
+}
+#teclado > #dividir{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #multiplicar{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #residuo{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #suma{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #potencia{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+
+#teclado > #raiz{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #pi{
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #negativo {
+    background-color: rgba(48, 48, 48, 0.800);
+    color: white;
+    box-shadow: 1px 3px  rgba(32, 32, 32, 0.8);
+}
+#teclado > #reset{
+    background-color   : rgba(173, 49, 189, 0.500);
+    color: white;
+    box-shadow: 1px 3px  rgb(52, 14, 56);
+
+}
+#teclado > #undo{
+    background-color   : rgba(173, 49, 189, 0.500);
+    color: white;
+    box-shadow: 1px 3px  rgb(52, 14, 56);
+}
+#teclado > #limpiar{
+    background-color   : rgba(173, 49, 189, 0.500);
+    color: white;
+    box-shadow: 1px 3px  rgb(52, 14, 56);
+
+
+}
+
+/* HOVER */
+#teclado > button:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > button#igual:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #limpiar:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #resta:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #dividir:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #multiplicar:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #residuo:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #suma:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #potencia:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+
+#teclado > #raiz:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #pi:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #negativo:hover {
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #reset:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
+#teclado > #undo:hover{
+    background-color   : rgba(36, 36, 36, 0.5);
+    color: rgb(173, 49, 189);
+    box-shadow: none;
+}
