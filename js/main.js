@@ -100,17 +100,8 @@ function negativo(){
     resultado.textContent = resultado.textContent + "-";
 }
 function pi(){
-    fristNum = resultado.textContent;
-    limpiar();
-    piResultado();
+    resultado.textContent = resultado.textContent + "3.1416";
 }
-function piResultado(){
-    z = Math.PI * parseFloat(fristNum)
-    resultado.textContent = z;
-}
-
-
-
 
 
 function resolver() {
